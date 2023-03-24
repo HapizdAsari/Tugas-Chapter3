@@ -23,6 +23,7 @@ class BangunDatar {
         this.sisi1 = sisi1;
         this.sisi2 = sisi2;
         this.sisi3 = sisi3;
+    
     }
   
     intoduction(){
