@@ -1,17 +1,12 @@
-TUGAS PENERAPAN KONSEP OOP BANGUN DATAR
+# TUGAS PENERAPAN OOP BANGUN DATAR
 
-1.Segitiga = a.Segitiga
-             b.Segitiga Siku
-             c.Segitiga Sama Sisi
-             d.Segitiga Sama Kaki
+- Segi Tiga = Segitiga, Segitiga Sama Sisi, Segitiga Sama Kaki
+- Segi Empat = Persegi, Persegi Panjang
+- Lingkaran
 
-2.SegiEmpat = a.Persegi
-              b.Persegi Panjang
+## Nama Anggota Kelompok
 
-3.Lingkaran
-
-
-Nama Kelompok = 1.Alfinasyah Rifqi
-                2.Hapizd Asari
-                3.Regita Asri Prihantari
-                4.Shelvi Azizah
+- Alfinasyah Rifqi
+- Hapizd Asari
+- Regita Asri Prihantari
+- Shelvi Azizah

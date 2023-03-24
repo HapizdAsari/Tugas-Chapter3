@@ -50,6 +50,76 @@ class BangunDatar {
   console.log(" ");
   let kelilingsegiTiga = new segiTiga('SegiTiga', 0, 0, 5, 12, 13);
   kelilingsegiTiga.keliling();
+
+  class SegitigaSamaSisi extends SegiTiga(BangunDatar) {
+    constructor(name, sisi) {
+        super(name);
+        this.sisi = sisi;
+    }
+
+    intoduction() {
+        super.intoduction();
+    }
+
+    luas() {
+        let tinggi = Math.sqrt(((this.sisi) ** 2) - ((1 / 2 * this.sisi) ** 2));
+        let Segitigasamasisi = 1 / 2 * this.sisi * tinggi;
+        console.log(
+            `Alas : ${this.sisi}\nTinggi : ${tinggi}\nLuas = ${Segitigasamasisi}`
+        );
+    }
+
+    keliling() {
+        let Segitigasamasisi = 3 * this.sisi;
+        console.log(
+            `Sisi : ${this.sisi}\nKeliling = ${Segitigasamasisi}`
+        );
+    }
+}
+
+    let luasSegitigaSamaSisi = new SegitigaSamaSisi('Segitiga Sama Sisi', 10);
+    console.log(" ");
+    luasSegitigaSamaSisi.intoduction();
+    luasSegitigaSamaSisi.luas();
+    console.log(" ");
+    let kelilingSegitigaSamaSisi = new SegitigaSamaSisi('Segitiga Sama Sisi', 10);
+    kelilingSegitigaSamaSisi.keliling();
+
+
+class SegitigaSamaKaki extends SegiTiga(BangunDatar) {
+    constructor(name, alas, tinggi) {
+        super(name);
+        this.alas = alas;
+        this.tinggi = tinggi;
+    }
+
+    intoduction() {
+        super.intoduction();
+    }
+
+    luas() {
+        let Segitigasamakaki = 1 / 2 * this.alas * this.tinggi;
+        console.log(
+            `Alas : ${this.alas}\nTinggi : ${this.tinggi}\nLuas = ${Segitigasamakaki}`
+        );
+    }
+
+    keliling() {
+        let sisimiring = Math.sqrt(((this.alas) ** 2) + ((this.tinggi) ** 2));
+        let Segitigasamakaki = this.alas + this.tinggi + sisimiring;
+        console.log(
+            `Alas : ${this.alas}\nTinggi : ${this.tinggi}\nSisi Miring : ${sisimiring}\nKeliling = ${Segitigasamakaki}`
+        );
+    }
+}
+
+let luasSegitigaSamaKaki = new SegitigaSamaKaki('Segitiga Sama Kaki', 2, 3);
+console.log(" ");
+luasSegitigaSamaKaki.intoduction();
+luasSegitigaSamaKaki.luas();
+console.log(" ");
+let kelilingSegitigaSamaKaki = new SegitigaSamaKaki('Segitiga Sama Kaki', 2, 3);
+kelilingSegitigaSamaKaki.keliling();
   
   
   const SegiEmpat = Base => class extends Base{
